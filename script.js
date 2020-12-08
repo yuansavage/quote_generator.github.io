@@ -24,7 +24,7 @@ function complete(){
 async function getQuote(){
     loading();
     //heroku提供免費的伺服器
-    const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+    const proxyUrl = 'https://blooming-beach-01891.herokuapp.com/';
     const apiUrl = 'http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
     try{
         //不同網域直接fetch api會被擋,加上proxyUrl可以解決這個問題
@@ -49,7 +49,7 @@ async function getQuote(){
 
     } catch(error){
         //發生錯誤還是要取得quote
-        getQuote();
+        //getQuote();
     }
 }
 
